@@ -1,0 +1,8 @@
+2. What does the following preprocessor directive do?
+   
+   #include <iostream>
+
+Answer:
+   The preprocessor directive above provides facilities for handling input and
+   output in C++ like cin and cout objects. These objects are examples of
+   istream and ostream classes which are defined in iostream file.

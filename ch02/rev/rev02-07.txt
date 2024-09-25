@@ -1,0 +1,6 @@
+7. What statement would you use to read a value from keyboard input into the
+   variable cheeses?
+
+Answer:
+   std::cin >> cheeses;
+

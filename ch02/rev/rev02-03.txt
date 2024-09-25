@@ -1,0 +1,6 @@
+3. What does the following statement do?
+
+   using namespace std;
+
+Answer:
+   The using directive makes all the names in the std namespace available.

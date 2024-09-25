@@ -1,0 +1,4 @@
+1. What are the modules of C++ programs called?
+
+Answer:
+   Modules in C++ are called functions.

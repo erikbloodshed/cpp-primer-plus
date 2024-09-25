@@ -1,0 +1,6 @@
+4. What statement would you use to print the phrase "Hello, world" and then
+   start a new line?
+
+Answer:
+   std::cout << "Hello, world\n"; // or
+   std::cout << "Hello, world" << std::endl;

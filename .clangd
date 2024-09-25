@@ -1,0 +1,7 @@
+CompileFlags:
+  Add: [-std=c++14, -Wall, -Wextra, -Wpedantic]
+  Remove: -xobjective-c++-header
+  Compiler: g++
+---
+Completion:
+  AllScopes: false
