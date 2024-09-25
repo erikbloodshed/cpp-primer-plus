@@ -1,5 +1,0 @@
-8. What statement would you use to print "We have X varieties of cheese," where
-   the current value of the cheeses variable replaces X?
-
-Answer:
-   std::cout << "We have " << cheeses << " varieties of cheese\n";

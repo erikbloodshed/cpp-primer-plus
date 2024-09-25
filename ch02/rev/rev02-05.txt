@@ -1,5 +1,0 @@
-5. What statement would you use to create an integer variable with the name
-   cheeses?
-
-Answer:
-   int cheeses;

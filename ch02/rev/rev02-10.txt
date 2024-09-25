@@ -1,5 +1,0 @@
-10. When do you not have to use the keyword return when you define a function?
-
-Answer:
-    The return keyword is not used when the function does not return a value to
-    the calling function.

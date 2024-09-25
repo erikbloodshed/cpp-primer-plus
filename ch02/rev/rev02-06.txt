@@ -1,6 +1,0 @@
-6. What statement would you use to assign the value 32 to the variable cheeses?
-
-Answer:
-   int cheeses;
-   cheeses = 32;
-
