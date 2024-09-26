@@ -4,7 +4,7 @@ double pow(const double&, const int&);
 
 int main()
 {
-    std::cout << pow(0.5, 1) << '\n';
+    std::cout << pow(0.5, 5) << '\n';
     return 0;
 }
 

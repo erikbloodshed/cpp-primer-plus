@@ -11,7 +11,7 @@ int main()
     cin >> carrots;  // C++ input
     cout << "Here are two more. ";
     carrots = carrots + 2;
-    cout << "How you have " << carrots << " carrots." << endl;
+    cout << "Now you have " << carrots << " carrots." << endl;
 
     return 0;
 }
