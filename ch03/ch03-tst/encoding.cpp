@@ -1,9 +1,8 @@
 #include <iostream>
-#include <string>
-#include <format>
 
 int main()
 {
     auto s = u"be good";
+    std::wcout << s << std::endl;
     return 0;
 }
