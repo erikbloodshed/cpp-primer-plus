@@ -1,7 +1,7 @@
 #include <iomanip>
 #include <iostream>
 
-void PrintTime(int, int);
+void display_time(int, int);
 
 int main()
 {
@@ -13,12 +13,11 @@ int main()
     int minute;
     std::cin >> minute;
 
-    PrintTime(hour, minute);
-
+    display_time(hour, minute);
     return 0;
 }
 
-void PrintTime(int h, int m)
+void display_time(int h, int m)
 {
     std::cout << "Time: " << std::setfill('0') << std::setw(2) << h << ":"
               << std::setfill('0') << std::setw(2) << m << std::endl;

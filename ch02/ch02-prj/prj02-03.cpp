@@ -1,23 +1,23 @@
 #include <iostream>
 
-void Phrase1();
-void Phrase2();
+void phrase1();
+void phrase2();
 
 int main()
 {
-    Phrase1();
-    Phrase1();
-    Phrase2();
-    Phrase2();
+    phrase1();
+    phrase1();
+    phrase2();
+    phrase2();
     return 0;
 }
 
-void Phrase1()
+void phrase1()
 {
     std::cout << "Three blind mice\n";
 }
 
-void Phrase2()
+void phrase2()
 {
     std::cout << "See how they run\n";
 }
