@@ -2,9 +2,9 @@
 
 int main()
 {
-    const double kInchesPerFoot {12};
+    const double kInchesPerFoot {12.0};
     const double kMetersPerInch {0.0254};
-    const double kPoundToKilograms {1/2.2};
+    const double kPoundToKilograms {0.4536};
 
     std::cout << "Enter your height in feet and inches: ";
     double feet, inches;
@@ -14,11 +14,11 @@ int main()
     double pounds;
     std::cin >> pounds;
 
-    double totalInches {inches + feet * kInchesPerFoot};
-    double heightInMeters {totalInches * kMetersPerInch};
-    double weightInKilograms {pounds * kPoundToKilograms};
-    double bmi {weightInKilograms / (heightInMeters * heightInMeters)};
+    double total_inches {inches + feet * kInchesPerFoot};
+    double height_meters {total_inches * kMetersPerInch};
+    double weight_kilograms {pounds * kPoundToKilograms};
+    double body_mass_index {weight_kilograms / (height_meters * height_meters)};
 
-    std::cout << "Your BMI: " << bmi << std::endl;
+    std::cout << "Your BMI: " << body_mass_index << std::endl;
     return 0;
 }

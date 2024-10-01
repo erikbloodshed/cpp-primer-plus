@@ -2,8 +2,8 @@
 
 int main()
 {
-    const double kMinPerDeg {60};
-    const double kSecPerMin {60};
+    const double kMinutesPerDegree {60};
+    const double kSecondsPerMinute {60};
 
     std::cout << "Enter a latitude in degrees, minutes, and seconds:\n"
               << "First, enter the degrees: ";
@@ -18,10 +18,12 @@ int main()
     double seconds;
     std::cin >> seconds;
 
-    const double totalDegrees {degrees + minutes / kMinPerDeg + seconds / (kMinPerDeg * kSecPerMin)};
+    const double kTotalDegrees = degrees
+                               + minutes / kMinutesPerDegree
+                               + seconds / (kMinutesPerDegree * kSecondsPerMinute);
 
     std::cout << degrees << " degrees, " << minutes << " minutes, " << seconds << " seconds = "
-              << totalDegrees << " degrees\n";
+              << kTotalDegrees << " degrees\n";
 
     return 0;
 }

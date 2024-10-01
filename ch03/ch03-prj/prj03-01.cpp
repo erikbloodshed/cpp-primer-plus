@@ -2,14 +2,14 @@
 
 int main()
 {
-    const int kInchesInFeet {12};
+    const int kInchesPerFoot {12};
 
     std::cout << "Enter your height in inches: _\b";
-    int heigthInInches;
-    std::cin >> heigthInInches;
+    int height_inches;
+    std::cin >> height_inches;
 
-    int feet {heigthInInches / kInchesInFeet};
-    int inches {heigthInInches % kInchesInFeet};
+    int feet {height_inches / kInchesPerFoot};
+    int inches {height_inches % kInchesPerFoot};
 
     std::cout << "Height: "
               << feet << " feet "
