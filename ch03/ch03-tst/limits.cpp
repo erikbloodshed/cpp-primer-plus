@@ -13,9 +13,9 @@ int main()
 
     // sizeof operator yields size of type or of variable
     cout << "int is " << sizeof(int) << " bytes." << endl;
-    cout << "short is " << sizeof(n_short) << " bytes." << endl;
+    cout << "short is " << sizeof n_short  << " bytes." << endl;
     cout << "long is " << sizeof(long) << " bytes." << endl;
-    cout << "long long is " << sizeof(n_llong) << " bytes." << endl;
+    cout << "long long is " << sizeof n_llong  << " bytes." << endl;
     cout << endl;
 
     cout << "Maximum values: " << endl;
