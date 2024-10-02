@@ -1,36 +1,32 @@
+// limits.cpp -- some integer limits
+#include <climits>             // use limits.h for older systems
 #include <iostream>
 #include <limits>
-#include <string>
-
-using namespace std;
 
 int main()
 {
-    // use textual representation for bool
-    cout << boolalpha;
+    using namespace std;
+    int n_int = std::numeric_limits<int>::max();       // initialize n_int to max int value
+    short n_short = std::numeric_limits<short>::max();  // symbols defined in climits file
+    long n_long = std::numeric_limits<long>::max();
+    long long n_llong = std::numeric_limits<long long>::max();
 
-    // print maximum of integeral types
-    cout << "max(short)            : "
-         << numeric_limits<short>::max() << "\n"
-         << "max(int)              : "
-         << numeric_limits<int>::max() << "\n"
-         << "max(long)             : "
-         << numeric_limits<long>::max() << "\n\n";
+    // sizeof operator yields size of type or of variable
+    cout << "int is " << sizeof(int) << " bytes." << endl;
+    cout << "short is " << sizeof(n_short) << " bytes." << endl;
+    cout << "long is " << sizeof(long) << " bytes." << endl;
+    cout << "long long is " << sizeof(n_llong) << " bytes." << endl;
+    cout << endl;
 
-    // print maximum floating-point types
-    cout << "max(float)            : "
-         << numeric_limits<float>::max() << "\n"
-         << "max(double)           : "
-         << numeric_limits<double>::max() << "\n"
-         << "max(long double)      : "
-         << numeric_limits<long double>::max() << "\n\n";
+    cout << "Maximum values: " << endl;
+    cout << "int: " << n_int << endl;
+    cout << "short: " << n_short << endl;
+    cout << "long: " << n_long << endl;
+    cout << "long long: " << n_llong << endl;
+    cout << endl;
 
-    // print whether char is signed
-    cout << "is_signed(char)       : "
-         << numeric_limits<char>::is_signed << "\n";
+    cout << "Minimum int value = " << std::numeric_limits<int>::min() << endl;
+    cout << "Bits per byte = " << std::numeric_limits<char>::digits + 1 << endl;
 
-    // print whether limits for type string exist
-    cout << "is_specialized(string): "
-         << numeric_limits<string>::is_specialized
-         << endl;
+    return 0;
 }
