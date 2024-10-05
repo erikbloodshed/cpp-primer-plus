@@ -10,9 +10,9 @@ int main()
     unsigned long philippines_population;
     std::cin >> philippines_population;  // 119'122'845
 
-    double percent = philippines_population * 100.0 / world_population;
+    double percentage = philippines_population * 100.0 / world_population;
 
-    std::cout << "The population of the Philippines is " << percent
+    std::cout << "The population of the Philippines is " << percentage
               << "% of the world population.\n";
 
     return 0;
