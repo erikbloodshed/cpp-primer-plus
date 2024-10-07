@@ -18,9 +18,9 @@ int main()
     double seconds;
     std::cin >> seconds;
 
-    double total_degrees = degrees
-                         + minutes / minutes_per_degree
-                         + seconds / (minutes_per_degree * seconds_per_minute);
+    double total_degrees {degrees
+                          + minutes / minutes_per_degree
+                          + seconds / (minutes_per_degree * seconds_per_minute)};
 
     std::cout << degrees << " degrees, " << minutes << " minutes, " << seconds << " seconds = "
               << total_degrees << " degrees\n";

@@ -21,7 +21,7 @@ int main()
     long long hours {time_left % kHoursPerDay};
     time_left = time_left / kHoursPerDay;
 
-    long long days = time_left;
+    long long days {time_left};
 
     std::cout << days << " days, "
               << hours << " hours, " << minutes << " minutes, "
